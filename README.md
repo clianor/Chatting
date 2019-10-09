@@ -1,1 +1,1 @@
-# express-react-webpack-skeleton
+# React, Express로 채팅앱 구현.
