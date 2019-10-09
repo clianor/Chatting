@@ -1,0 +1,50 @@
+.AuthForm {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.AuthForm > input {
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+
+.AuthForm > input + input {
+    margin-top: 1.25rem;
+}
+
+.AuthForm > input:focus {
+    color: darkgray;
+}
+
+.AuthForm > button {
+    border-radius: 1.25rem;
+    background: black;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.AuthForm > button:hover {
+    background: gray;
+}
+
+.footer {
+    float: right;
+    margin-bottom: 1rem;
+}
+
+.footer > a {
+    text-decoration: none;
+    font-weight: 800;
+    color: darkgray;
+    padding-right: 1rem;
+}
+
+.footer > a:hover {
+    color: dimgray;
+}

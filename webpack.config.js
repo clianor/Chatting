@@ -29,6 +29,7 @@ module.exports = {
     devServer: { // 개발모드일때 적용되는 설정.
         port: 3000, // 개발 포트 지정.
         open: true, // 자동으로 브라우저를 열어 표시.
+        historyApiFallback: true, // HTML5의 History API를 사용하는 경우에 설정해놓은 url이외의 경로로 접근시 404에러가 발생하는데 이때도 index.html을 서빙할지를 결정하는 옵션.
         proxy: { // 개발서버에서 백엔드 api의 주소가 다를때 사용하는 옵션.
             "/api": "http://localhost:8080"
         }

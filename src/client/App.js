@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
-import './App.css';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { Home, Login, Register } from './pages';
 
 const App = () => {
-    const [hi, setHi] = useState("hello!");
-
     return (
         <div className="App">
-            <h1>{hi}</h1>
-            hello
+            <Route exact path="/" component={Home} />
+            <Switch>
+                <Route path="/login" component={Login} />
+                <Route path="/register" component={Register} />
+            </Switch>
         </div>
     )
 };
